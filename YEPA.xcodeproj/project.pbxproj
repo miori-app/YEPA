@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D19CB80269B25420036B3BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB7F269B25420036B3BE /* FirstViewController.swift */; };
+		3D19CB87269B278A0036B3BE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB86269B278A0036B3BE /* BaseViewController.swift */; };
+		3D19CB89269B27D20036B3BE /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB88269B27D20036B3BE /* BaseTabBarController.swift */; };
+		3D19CB8B269B28030036B3BE /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8A269B28030036B3BE /* IndicatorView.swift */; };
+		3D19CB8D269B287E0036B3BE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8C269B287E0036B3BE /* Color.swift */; };
 		3D4236302699D3DF0075E192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42362F2699D3DF0075E192 /* AppDelegate.swift */; };
 		3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236312699D3DF0075E192 /* SceneDelegate.swift */; };
 		3D4236342699D3DF0075E192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236332699D3DF0075E192 /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 		09AD1E784B4E34C5CEE6954E /* Pods-YEPA-YEPAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YEPA-YEPAUITests.release.xcconfig"; path = "Target Support Files/Pods-YEPA-YEPAUITests/Pods-YEPA-YEPAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1510B4AE2152A437C918B092 /* Pods-YEPATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YEPATests.release.xcconfig"; path = "Target Support Files/Pods-YEPATests/Pods-YEPATests.release.xcconfig"; sourceTree = "<group>"; };
 		3D19CB7F269B25420036B3BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3D19CB86269B278A0036B3BE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = YEPA/View/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
+		3D19CB88269B27D20036B3BE /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseTabBarController.swift; path = YEPA/View/BaseTabBarController.swift; sourceTree = SOURCE_ROOT; };
+		3D19CB8A269B28030036B3BE /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = YEPA/View/IndicatorView.swift; sourceTree = SOURCE_ROOT; };
+		3D19CB8C269B287E0036B3BE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = YEPA/View/Color.swift; sourceTree = SOURCE_ROOT; };
 		3D42362C2699D3DF0075E192 /* YEPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YEPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D42362F2699D3DF0075E192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4236312699D3DF0075E192 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3D19CB81269B273C0036B3BE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D19CB85269B27760036B3BE /* Base */,
+				3D19CB84269B27700036B3BE /* Extension */,
+				3D19CB83269B27640036B3BE /* CommonClass */,
+				3D19CB82269B274E0036B3BE /* Secret */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3D19CB82269B274E0036B3BE /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		3D19CB83269B27640036B3BE /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				3D19CB8A269B28030036B3BE /* IndicatorView.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		3D19CB84269B27700036B3BE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D19CB8C269B287E0036B3BE /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D19CB85269B27760036B3BE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3D19CB86269B278A0036B3BE /* BaseViewController.swift */,
+				3D19CB88269B27D20036B3BE /* BaseTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3D4236232699D3DF0075E192 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +187,7 @@
 		3D42362E2699D3DF0075E192 /* YEPA */ = {
 			isa = PBXGroup;
 			children = (
+				3D19CB81269B273C0036B3BE /* Configuration */,
 				3D19CB7E269B25290036B3BE /* View */,
 				3D42362F2699D3DF0075E192 /* AppDelegate.swift */,
 				3D4236312699D3DF0075E192 /* SceneDelegate.swift */,
@@ -417,8 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D19CB87269B278A0036B3BE /* BaseViewController.swift in Sources */,
 				3D4236342699D3DF0075E192 /* ViewController.swift in Sources */,
+				3D19CB89269B27D20036B3BE /* BaseTabBarController.swift in Sources */,
+				3D19CB8B269B28030036B3BE /* IndicatorView.swift in Sources */,
 				3D4236302699D3DF0075E192 /* AppDelegate.swift in Sources */,
+				3D19CB8D269B287E0036B3BE /* Color.swift in Sources */,
 				3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */,
 				3D19CB80269B25420036B3BE /* FirstViewController.swift in Sources */,
 			);
