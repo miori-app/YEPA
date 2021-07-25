@@ -7,7 +7,9 @@ Podfile.lock
 # Edit at https://www.gitignore.io/?templates=xcode,swift,cocoapods
 
 ###custom secret folder###
+###custom Resources folder###
 Secret/
+Resources/
 
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
