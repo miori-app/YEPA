@@ -16,7 +16,6 @@
 		3D4236302699D3DF0075E192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42362F2699D3DF0075E192 /* AppDelegate.swift */; };
 		3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236312699D3DF0075E192 /* SceneDelegate.swift */; };
 		3D4236342699D3DF0075E192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236332699D3DF0075E192 /* ViewController.swift */; };
-		3D4236372699D3DF0075E192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4236352699D3DF0075E192 /* Main.storyboard */; };
 		3D4236392699D3E10075E192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4236382699D3E10075E192 /* Assets.xcassets */; };
 		3D42363C2699D3E10075E192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42363A2699D3E10075E192 /* LaunchScreen.storyboard */; };
 		3D4236472699D3E10075E192 /* YEPATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236462699D3E10075E192 /* YEPATests.swift */; };
@@ -56,7 +55,6 @@
 		3D42362F2699D3DF0075E192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4236312699D3DF0075E192 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D4236332699D3DF0075E192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D4236362699D3DF0075E192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D4236382699D3E10075E192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D42363B2699D3E10075E192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D42363D2699D3E10075E192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				3D42362F2699D3DF0075E192 /* AppDelegate.swift */,
 				3D4236312699D3DF0075E192 /* SceneDelegate.swift */,
 				3D4236332699D3DF0075E192 /* ViewController.swift */,
-				3D4236352699D3DF0075E192 /* Main.storyboard */,
 				3D4236382699D3E10075E192 /* Assets.xcassets */,
 				3D42363A2699D3E10075E192 /* LaunchScreen.storyboard */,
 				3D42363D2699D3E10075E192 /* Info.plist */,
@@ -344,7 +341,6 @@
 			files = (
 				3D42363C2699D3E10075E192 /* LaunchScreen.storyboard in Resources */,
 				3D4236392699D3E10075E192 /* Assets.xcassets in Resources */,
-				3D4236372699D3DF0075E192 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,14 +512,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D4236352699D3DF0075E192 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D4236362699D3DF0075E192 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D42363A2699D3E10075E192 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -658,16 +646,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GLQQLN3R4U;
 				INFOPLIST_FILE = YEPA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.YEPA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -678,16 +668,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GLQQLN3R4U;
 				INFOPLIST_FILE = YEPA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.YEPA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
