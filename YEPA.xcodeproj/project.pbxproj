@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D19CB80269B25420036B3BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB7F269B25420036B3BE /* FirstViewController.swift */; };
+		3D19CB80269B25420036B3BE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB7F269B25420036B3BE /* LogInViewController.swift */; };
 		3D19CB87269B278A0036B3BE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB86269B278A0036B3BE /* BaseViewController.swift */; };
 		3D19CB89269B27D20036B3BE /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB88269B27D20036B3BE /* BaseTabBarController.swift */; };
 		3D19CB8B269B28030036B3BE /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8A269B28030036B3BE /* IndicatorView.swift */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		09AD1E784B4E34C5CEE6954E /* Pods-YEPA-YEPAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YEPA-YEPAUITests.release.xcconfig"; path = "Target Support Files/Pods-YEPA-YEPAUITests/Pods-YEPA-YEPAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1510B4AE2152A437C918B092 /* Pods-YEPATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YEPATests.release.xcconfig"; path = "Target Support Files/Pods-YEPATests/Pods-YEPATests.release.xcconfig"; sourceTree = "<group>"; };
-		3D19CB7F269B25420036B3BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3D19CB7F269B25420036B3BE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3D19CB86269B278A0036B3BE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = YEPA/View/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		3D19CB88269B27D20036B3BE /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseTabBarController.swift; path = YEPA/View/BaseTabBarController.swift; sourceTree = SOURCE_ROOT; };
 		3D19CB8A269B28030036B3BE /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = YEPA/View/IndicatorView.swift; sourceTree = SOURCE_ROOT; };
@@ -114,7 +114,7 @@
 		3D19CB7E269B25290036B3BE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3D19CB7F269B25420036B3BE /* FirstViewController.swift */,
+				3D19CB7F269B25420036B3BE /* LogInViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -476,7 +476,7 @@
 				3D19CB8D269B287E0036B3BE /* Color.swift in Sources */,
 				3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */,
 				3D19CB8F269C8E530036B3BE /* UIView.swift in Sources */,
-				3D19CB80269B25420036B3BE /* FirstViewController.swift in Sources */,
+				3D19CB80269B25420036B3BE /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

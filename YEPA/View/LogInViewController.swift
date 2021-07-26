@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class FirstViewController: UIViewController {
+class LogInViewController: UIViewController {
     
     let mainLogo = UIImageView().then {
         let tmpImg = UIImage(named: "TextLogo.png")
@@ -45,7 +45,7 @@ class FirstViewController: UIViewController {
 
 }
 
-extension FirstViewController {
+extension LogInViewController {
     
     private func bindConstraints(){
         mainLogo.snp.makeConstraints {
