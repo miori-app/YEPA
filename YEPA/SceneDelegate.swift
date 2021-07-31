@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Window 설정
         self.window = UIWindow(windowScene: scene)
-        window?.rootViewController = LogInViewController()
+        window?.rootViewController = UINavigationController(rootViewController: LogInViewController())
         window?.makeKeyAndVisible()
     }
 
