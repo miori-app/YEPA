@@ -35,7 +35,7 @@ class LogInViewController: BaseViewController {
     let subLabel = UILabel().then {
         $0.numberOfLines = 0
         $0.text = "영어능력이 검증된 파트너들이 여러분의 글을\n매력적으로 번역해드립니다"
-        $0.textColor = .gray3
+        $0.textColor = .cgray3
         $0.textAlignment = .center
     }
     
