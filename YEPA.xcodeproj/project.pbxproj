@@ -13,6 +13,8 @@
 		3D19CB8B269B28030036B3BE /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8A269B28030036B3BE /* IndicatorView.swift */; };
 		3D19CB8D269B287E0036B3BE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8C269B287E0036B3BE /* Color.swift */; };
 		3D19CB8F269C8E530036B3BE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19CB8E269C8E530036B3BE /* UIView.swift */; };
+		3D2EE48B26B5827F00F699C0 /* AgreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EE48A26B5827F00F699C0 /* AgreeViewController.swift */; };
+		3D2EE48D26B589E800F699C0 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2EE48C26B589E800F699C0 /* UINavigationBar.swift */; };
 		3D4236302699D3DF0075E192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42362F2699D3DF0075E192 /* AppDelegate.swift */; };
 		3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236312699D3DF0075E192 /* SceneDelegate.swift */; };
 		3D4236342699D3DF0075E192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4236332699D3DF0075E192 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		3D19CB8A269B28030036B3BE /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = YEPA/View/IndicatorView.swift; sourceTree = SOURCE_ROOT; };
 		3D19CB8C269B287E0036B3BE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = YEPA/View/Color.swift; sourceTree = SOURCE_ROOT; };
 		3D19CB8E269C8E530036B3BE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = YEPA/View/UIView.swift; sourceTree = SOURCE_ROOT; };
+		3D2EE48A26B5827F00F699C0 /* AgreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeViewController.swift; sourceTree = "<group>"; };
+		3D2EE48C26B589E800F699C0 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		3D42362C2699D3DF0075E192 /* YEPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YEPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D42362F2699D3DF0075E192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4236312699D3DF0075E192 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				3D19CB7F269B25420036B3BE /* LogInViewController.swift */,
+				3D2EE48A26B5827F00F699C0 /* AgreeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			children = (
 				3D19CB8C269B287E0036B3BE /* Color.swift */,
 				3D19CB8E269C8E530036B3BE /* UIView.swift */,
+				3D2EE48C26B589E800F699C0 /* UINavigationBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -477,6 +483,8 @@
 				3D4236322699D3DF0075E192 /* SceneDelegate.swift in Sources */,
 				3D19CB8F269C8E530036B3BE /* UIView.swift in Sources */,
 				3D19CB80269B25420036B3BE /* LogInViewController.swift in Sources */,
+				3D2EE48D26B589E800F699C0 /* UINavigationBar.swift in Sources */,
+				3D2EE48B26B5827F00F699C0 /* AgreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
