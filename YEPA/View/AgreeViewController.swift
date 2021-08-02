@@ -88,8 +88,11 @@ class AgreeViewController: BaseViewController {
         $0.tag = 3
     }
 
-    
-    
+    let freeLabel0 = UILabel().then {
+        $0.text = "선택약관"
+        $0.textColor = .cgray3
+        $0.font = UIFont.systemFont(ofSize: 12)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,7 +123,7 @@ extension AgreeViewController {
     
     private func initVC(){
         _ = [loginBtn,firstAgreeLabel,subView].map { self.view.addSubview($0)}
-        _ = [allAgreeView,mustLabel0,mustLabel1,mustLabel2,mustLabel3,checkBtn1,checkBtn2,checkBtn3].map {self.subView.addSubview($0)}
+        _ = [allAgreeView,mustLabel0,mustLabel1,mustLabel2,mustLabel3,checkBtn1,checkBtn2,checkBtn3,freeLabel0].map {self.subView.addSubview($0)}
         
        // _ = [allAgreeLabel,checkBtn].map {self.allAgreeView.addArrangedSubview($0)}
         _ = [allAgreeLabel,checkBtn0].map {self.allAgreeView.addSubview($0)}
@@ -198,6 +201,11 @@ extension AgreeViewController {
         checkBtn3.snp.makeConstraints {
             $0.centerY.equalTo(mustLabel3)
             $0.trailing.equalToSuperview().offset(-12)
+        }
+        
+        freeLabel0.snp.makeConstraints {
+            $0.leading.equalTo(mustLabel0.snp.leading)
+            $0.top.equalTo(mustLabel3.snp.bottom).offset(41)
         }
     }
 }
