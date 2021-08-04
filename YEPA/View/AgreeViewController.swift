@@ -104,8 +104,7 @@ class AgreeViewController: BaseViewController {
         
         initVC()
         bindConstraints()
-        
-        checkBtn0.addTarget(self, action: #selector(didTapAgree), for: .touchUpInside)
+        didAgree()
     }
     
 
@@ -131,9 +130,26 @@ extension AgreeViewController {
         _ = [allAgreeLabel,checkBtn0].map {self.allAgreeView.addSubview($0)}
     }
     
-    @objc private func didTapAgree(){
+    private func didAgree(){
+        _ = [checkBtn0,checkBtn1,checkBtn2,checkBtn3].map {$0.addTarget(self, action: #selector(didTapAgree(pBtn:)), for: .touchUpInside)}
+    }
+    @objc private func didTapAgree(pBtn : UIButton){
         //self.checkBtn0.isSelected.toggle()
-        checkBtn0.isSelected = !checkBtn0.isSelected
+        
+        //MARK: - logic 수정 필요
+        if pBtn.tag == 0 {
+            checkBtn0.isSelected = !checkBtn0.isSelected
+            checkBtn1.isSelected = !checkBtn1.isSelected
+            checkBtn2.isSelected = !checkBtn2.isSelected
+            checkBtn3.isSelected = !checkBtn3.isSelected
+        } else if pBtn.tag == 1 {
+            checkBtn1.isSelected = !checkBtn1.isSelected
+        } else if pBtn.tag == 2 {
+            checkBtn2.isSelected = !checkBtn2.isSelected
+        } else {
+            checkBtn3.isSelected = !checkBtn3.isSelected
+        }
+        
     }
 }
 
