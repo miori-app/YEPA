@@ -42,7 +42,7 @@ class AgreeViewController: BaseViewController {
     
     let checkBtn0 = UIButton().then {
         $0.setImage(UIImage(named: "ncheck-circle.png"), for: .normal)
-        $0.setImage(UIImage(named: "check-circle"), for: .highlighted)
+        $0.setImage(UIImage(named: "check-circle"), for: .selected)
         $0.tag = 0
     }
     
@@ -60,7 +60,7 @@ class AgreeViewController: BaseViewController {
     
     let checkBtn1 = UIButton().then {
         $0.setImage(UIImage(named: "ncheck-circle.png"), for: .normal)
-        $0.setImage(UIImage(named: "check-circle"), for: .highlighted)
+        $0.setImage(UIImage(named: "check-circle"), for: .selected)
         $0.tag = 1
     }
     
@@ -72,7 +72,7 @@ class AgreeViewController: BaseViewController {
     
     let checkBtn2 = UIButton().then {
         $0.setImage(UIImage(named: "ncheck-circle.png"), for: .normal)
-        $0.setImage(UIImage(named: "check-circle"), for: .highlighted)
+        $0.setImage(UIImage(named: "check-circle"), for: .selected)
         $0.tag = 2
     }
     
@@ -84,7 +84,7 @@ class AgreeViewController: BaseViewController {
     
     lazy var checkBtn3 = UIButton().then {
         $0.setImage(UIImage(named: "ncheck-circle.png"), for: .normal)
-        $0.setImage(UIImage(named: "check-circle"), for: .highlighted)
+        $0.setImage(UIImage(named: "check-circle"), for: .selected)
         $0.tag = 3
     }
 
@@ -104,6 +104,8 @@ class AgreeViewController: BaseViewController {
         
         initVC()
         bindConstraints()
+        
+        checkBtn0.addTarget(self, action: #selector(didTapAgree), for: .touchUpInside)
     }
     
 
@@ -127,6 +129,11 @@ extension AgreeViewController {
         
        // _ = [allAgreeLabel,checkBtn].map {self.allAgreeView.addArrangedSubview($0)}
         _ = [allAgreeLabel,checkBtn0].map {self.allAgreeView.addSubview($0)}
+    }
+    
+    @objc private func didTapAgree(){
+        //self.checkBtn0.isSelected.toggle()
+        checkBtn0.isSelected = !checkBtn0.isSelected
     }
 }
 
